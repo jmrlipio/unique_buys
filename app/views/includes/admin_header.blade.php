@@ -1,13 +1,3 @@
-<style>
-/*======================= Bootstrap Override ======================*/
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-color: #FCF0F0 !important;
-background-color: #428BCA !important;
-border: 1px solid #ddd;
-}
-/*======================= Bootstrap Override ======================*/
-</style>
-
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">

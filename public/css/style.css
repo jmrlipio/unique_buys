@@ -1,6 +1,6 @@
 @font-face {
 font-family: GreatVibes;
-src: url("../fonts/GreatVibes-Regular.otf") format("opentype");
+src: url("../../fonts/GreatVibes-Regular.otf") format("opentype");
 }
 #wrapper { margin: 0 auto; width: 100%; overflow: hidden; }
 
@@ -337,3 +337,11 @@ color: #d17581 !important;
 #post-review-box span:hover { cursor: pointer; }
 .pm { width: 100%; }
 /*================================== END ==================================*/
+
+/*======================= Bootstrap Override ======================*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #FCF0F0 !important;
+background-color: #428BCA !important;
+border: 1px solid #ddd;
+}
+/*======================= Bootstrap Override ======================*/

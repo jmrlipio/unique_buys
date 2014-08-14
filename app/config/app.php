@@ -123,7 +123,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 		'Moltin\Cart\CartServiceProvider',
-		'D3Catalyst\Exchangerate\Laravel4\ServiceProviders\ExchangerateServiceProvider'
+		'D3Catalyst\Exchangerate\Laravel4\ServiceProviders\ExchangerateServiceProvider',
+		'CeesVanEgmond\Minify\MinifyServiceProvider'
 	),
 
 	/*

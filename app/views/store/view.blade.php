@@ -122,8 +122,7 @@
 
 @stop
 @section('scripts')
-  {{HTML::script('js/expanding.js')}}
-  {{HTML::script('js/starrr.js')}}
+  {{ Minify::javascript(array('/js/expanding.js', '/js/starrr.js')) }}
 
   <script type="text/javascript">
     $(function(){

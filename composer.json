@@ -7,7 +7,8 @@
 		"laravel/framework": "4.2.*",
 		"intervention/image": "dev-master",
 		"moltin/laravel-cart": "dev-master",
-		"d3catalyst/exchangerate": "dev-master"
+		"d3catalyst/exchangerate": "dev-master",
+		"ceesvanegmond/minify": "2.0.*"
 	},
 	"autoload": {
 		"classmap": [

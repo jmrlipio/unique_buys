@@ -8,12 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Admin Page</title>
-
+    
     {{ HTML::style('css/bootstrap.min.css') }}
-    {{ HTML::style('css/style.css') }}
-    {{ HTML::style('admin_style/css/plugins/dataTables/dataTables.bootstrap.css') }}
-    {{ HTML::style('admin_style/font-awesome/css/font-awesome.css') }}
-    {{ HTML::style('admin_style/css/sb-admin.css') }}
+    {{ HTML::style('admin_style/css/sb-admin.css') }} 
+    {{ Minify::stylesheet(array('/admin_style/css/plugins/dataTables/dataTables.bootstrap.css', 
+    '/css/style.css' ,'/admin_style/css/plugins/dataTables/dataTables.bootstrap.css' ,'/admin_style/font-awesome/css/font-awesome.css')) }}
 
 
     

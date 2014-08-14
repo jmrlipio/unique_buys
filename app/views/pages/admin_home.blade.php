@@ -128,10 +128,10 @@
 </div><!-- End of wrapper -->
 @stop  
 @section('admin_scripts')
-    {{ HTML::script('admin_style/js/plugins/metisMenu/jquery.metisMenu.js')}}
-    {{ HTML::script('admin_style/js/plugins/dataTables/jquery.dataTables.js')}}
-    {{ HTML::script('admin_style/js/plugins/dataTables/dataTables.bootstrap.js')}}
-    {{ HTML::script('admin_style/js/sb-admin.js') }}
+
+    {{ Minify::javascript(array('/admin_style/js/plugins/metisMenu/jquery.metisMenu.js', 
+    '/admin_style/js/plugins/dataTables/jquery.dataTables.js', '/admin_style/js/plugins/dataTables/dataTables.bootstrap.js', 
+    '/admin_style/js/sb-admin.js')) }}
 
 <script>
     $(document).ready(function() {

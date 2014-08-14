@@ -7,16 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>E-Commerce Prototype</title>
 
-{{ HTML::style('admin_style/font-awesome/css/font-awesome.css') }}
-{{ HTML::style('admin_style/css/plugins/social-buttons/social-buttons.css') }}
-{{ HTML::style('css/component.css') }}
-{{ HTML::style('css/fractionslider.css') }}
 {{ HTML::style('css/bootstrap.min.css') }}
-{{ HTML::style('css/style.css') }}
+{{ Minify::stylesheet(array('/admin_style/font-awesome/css/font-awesome.css', 
+'/admin_style/css/plugins/social-buttons/social-buttons.css' ,'/css/component.css', 
+'/css/fractionslider.css', '/css/style.css', '/css/thumbnail.css')) }}
 
-{{-- <!-- =============== Product Thumbnails ===============  --> --}}
-
-{{ HTML::style('css/thumbnail.css') }}
-{{ HTML::script('js/modernizr.custom.js') }}
-
-{{-- <!-- =============== End Product Thumbnails ===============  --> --}}

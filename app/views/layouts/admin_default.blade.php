@@ -15,8 +15,7 @@
 		</div>
 	</div>
 
-{{ HTML::script('js/jquery.js')}}
-{{ HTML::script('js/bootstrap.min.js')}}
+{{ Minify::javascript(array('/js/jquery.js', '/js/bootstrap.min.js')) }}
 
 @yield('admin_scripts')
 

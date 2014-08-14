@@ -20,17 +20,10 @@
 			</footer>
 		</div>
 	</div>
-{{ HTML::script('js/jquery.js') }}
-{{ HTML::script('js/slider.js') }}
-{{ HTML::script('js/bootstrap.min.js') }}
-{{ HTML::script('js/jquery.fractionslider.js') }}
 
+{{ Minify::javascript(array('/js/jquery.js', '/js/slider.js', '/js/bootstrap.min.js', 
+'/js/jquery.fractionslider.js', '/js/modernizr.custom.js', '/js/toucheffects.js')) }}
 
-{{-- <!-- =============== Product Thumbnails ===============  --> --}}
-
-{{ HTML::script('js/toucheffects.js') }}
-
-{{-- <!-- =============== End Product Thumbnails ===============  --> --}}
 @yield('scripts')
 
 </body>
