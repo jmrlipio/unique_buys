@@ -36,13 +36,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},	
-	"minimum-stability": "dev",
-	"prefer-stable": true
-		
-	/**
-		Remove this block of text before updating composer to prevent error!!! and paste it again after update!
-		"minimum-stability": "stable" Dafault value: stable 
-		Added, to test cart to pay with paypal
-		Added "prefer-stable": true, to test cart to pay with paypal
-	**/
+	"minimum-stability": "stable"	
 }
