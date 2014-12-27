@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'unique_buys',
 			'username'  => 'root',
-			'password'  => '1234aA',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
