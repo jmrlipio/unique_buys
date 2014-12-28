@@ -13,7 +13,7 @@ return array(
     */
 
     'ignore_environments' => array(
-	    'local',
+	    //'local', default:uncomment this line
     ),
 
     /*
