@@ -104,11 +104,16 @@
 	                <div class="col-md-12">
 	                    @for ($i=1; $i <= 5 ; $i++)
 	                      <span class="glyphicon glyphicon-star{{ ($i <= $review->rating) ? '' : '-empty'}}"></span>
-	                    @endfor                   
-	                    {{ 
+	                    @endfor  
+
+	                    {{
+	                    	$fullname = $review->user->name;
+	                    	$review->user ? $fullname : 'Anonymous'
+	                    }}                 
+	                    {{-- 	default                     	
 	                    	$fullname = $review->user->first_name.' '.$review->user->last_name;
 	                    	$review->user ? $fullname : 'Anonymous'
-	                    }} <span class="pull-right text-muted"><i class="fa fa-clock-o fa-fw"></i><em>{{$review->timeago}}</em></span> 
+	                    --}} <span class="pull-right text-muted"><i class="fa fa-clock-o fa-fw"></i><em>{{$review->timeago}}</em></span> 
 	                    
 	                    <p>{{{$review->comment}}}</p>
 	                </div>

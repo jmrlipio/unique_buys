@@ -2,7 +2,7 @@
 
 class Review extends Eloquent {
 	
-	protected $table = 'reviews';
+	protected $table = 'review';
 
     protected $fillable = array('comment','rating');
 

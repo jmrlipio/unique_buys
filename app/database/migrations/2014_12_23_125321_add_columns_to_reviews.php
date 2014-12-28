@@ -12,7 +12,7 @@ class AddColumnsToReviews extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('reviews', function($table) {
+		Schema::table('review', function($table) {
 		    $table->integer("rating")->default(0);
 		    $table->integer("approved")->default(1);
 		    $table->integer("spam")->default(0);

@@ -84,11 +84,15 @@
 
 <div class="row">
 {{ Form::open(array('url'=>'admin/products/create', 'files'=>true)) }}
-	<div class="col-md-6">   
-		   
-	       {{ Form::label('isFeatured', 'Featured Product:')}}<br/>
-		   {{ Form::select('isFeatured', array('true'=> 'Yes', 'false'=> 'No'), $product->isFeatured) }}<br/>
-	       
+	<div class="col-md-6">  
+			{{ Form::label('isFeatured', 'Featured Product:')}}<br/> 
+
+		@forelse($products as $product)		       
+			{{ Form::select('isFeatured', array('true'=> 'Yes', 'false'=> 'No'), $product->isFeatured) }}
+	    @empty	       		
+	       	{{ Form::select('isFeatured', array('true'=> 'Yes', 'false'=> 'No'), 'false') }}<br/>
+		@endforelse
+
 	       {{ Form::label('image','Choose an image:') }}
 		   {{ Form::file('image', array('onchange' => 'readURL(this);', 'required')) }}
 
